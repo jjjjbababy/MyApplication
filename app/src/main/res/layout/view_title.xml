@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/tools"
+    style="@style/titlebar_root">
+
+    <!-- 标题栏左侧按钮 -->
+    <ImageView
+        android:id="@+id/iv_left"
+        android:src="@mipmap/ic_launcher"
+        style="@style/titlebar_iv_left" />
+
+    <!-- 标题栏标题文字 -->
+    <TextView
+        android:id="@+id/tv_name"
+        style="@style/title_name" />
+
+    <!-- 标题栏右侧图标 -->
+    <ImageView
+        android:id="@+id/iv_right"
+        tool:src="@mipmap/ic_launcher"
+        style="@style/titlebar_iv_right" />
+
+    <!-- 标题栏右侧文字 -->
+    <TextView
+        android:id="@+id/tv_right"
+        style="@style/title_tv_right" />
+
+</com.zhy.autolayout.AutoRelativeLayout>

@@ -1,0 +1,121 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="layoutwh_mm">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="layoutwh_mw">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="layoutwh_ww">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="layoutwh_ww_h" parent="layoutwh_ww">
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="layoutwh_mw_h" parent="layoutwh_mw">
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="layoutwh_mw_v" parent="layoutwh_mw">
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="layoutwh_mm_v" parent="layoutwh_mm">
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <!-- 根布局 线性 垂直 -->
+    <style name="root_lin_ver" parent="layoutwh_mm_v">
+        <item name="android:background">@color/mainbg</item>
+    </style>
+
+    <!-- 根布局 相对 -->
+    <style name="root_rel_ver" parent="layoutwh_mm">
+        <item name="android:background">@color/mainbg</item>
+    </style>
+
+    <style name="iv_base" parent="layoutwh_ww">
+        <item name="android:scaleType">fitXY</item>
+    </style>
+
+    <style name="v_line_base">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+    </style>
+
+    <style name="v_line_base_v">
+        <item name="android:layout_width">1px</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="et_base" parent="layoutwh_mw">
+        <item name="android:background">@null</item>
+    </style>
+
+    <style name="titlebar_iv_base" parent="iv_base">
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <style name="titlebar_iv_left" parent="titlebar_iv_base">
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:layout_width">20dp</item>
+    </style>
+
+    <style name="titlebar_iv_right" parent="titlebar_iv_base">
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:layout_width">20dp</item>
+    </style>
+
+    <style name="title_name" parent="layoutwh_ww">
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/tbtext</item>
+        <item name="android:layout_marginLeft">50dp</item>
+        <item name="android:layout_marginRight">50dp</item>
+        <item name="android:textSize">20dp</item>
+    </style>
+
+    <style name="title_tv_right" parent="layoutwh_ww">
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:textColor">@color/tbtext</item>
+        <item name="android:visibility">gone</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:text">20dp</item>
+    </style>
+
+
+    <style name="titlebar_root">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:background">@color/tbbg</item>
+    </style>
+
+
+    <style name="PopupAnimation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/fade_in</item>
+        <item name="android:windowExitAnimation">@anim/fade_out</item>
+    </style>
+</resources>
